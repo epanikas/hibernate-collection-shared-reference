@@ -1,0 +1,30 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <persistence-unit name="my-persistence-unit" transaction-type="RESOURCE_LOCAL">
+<!--        <mapping-file>META-INF/orm.xml</mapping-file>-->
+<!--        <exclude-unlisted-classes/>-->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+            <property name="hibernate.default_schema" value="MY_SCHEMA" />
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+<!--            <property name="hibernate.hbm2ddl.import_files" value="./src/main/resources/import.sql"/>-->
+
+
+<!--            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+<!--            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/>-->
+<!--            <property name="jakarta.persistence.schema-generation.scripts.create-target" value="create.sql"/>-->
+
+
+<!--            &lt;!&ndash; ref: https://stackoverflow.com/questions/4674828/how-to-break-expression-into-more-lines-in-hibernates-import-sql&ndash;&gt;-->
+<!--            <property name="hibernate.hbm2ddl.import_files_sql_extractor" value="org.hibernate.tool.schema.internal.script.MultiLineSqlScriptExtractor" />-->
+
+<!--            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+<!--            <property name="jakarta.persistence.schema-generation.create-source" value="script"/>-->
+<!--            <property name="jakarta.persistence.schema-generation.create-script-source" value="META-INF/sql/create.sql" />-->
+<!--            <property name="jakarta.persistence.sql-load-script-source" value="META-INF/sql/data.sql" />-->
+<!--            <property name="jakarta.persistence.schema-generation.drop-source" value="script" />-->
+<!--            <property name="jakarta.persistence.schema-generation.drop-script-source" value="META-INF/sql/drop.sql" />-->
+        </properties>
+    </persistence-unit>
+</persistence>
