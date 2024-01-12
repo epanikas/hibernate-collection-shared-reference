@@ -11,6 +11,7 @@
 <!--            <property name="hibernate.hbm2ddl.import_files" value="./src/main/resources/import.sql"/>-->
 
 
+            <!-- NOTE: uncomment these 3 lines to output schema DDL creation script -->
 <!--            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>-->
 <!--            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/>-->
 <!--            <property name="jakarta.persistence.schema-generation.scripts.create-target" value="create.sql"/>-->
